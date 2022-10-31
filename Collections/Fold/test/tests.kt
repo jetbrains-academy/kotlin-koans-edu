@@ -15,7 +15,8 @@ class TestFold {
                         order(youTrack)
                 )
         )
-        Assert.assertTrue(errorMessage("getProductsOrderedByAll"),
+        Assert.assertTrue(errorMessage("getProductsOrderedByAll") +
+                "The product (products) ordered by all customers should be added to the set",
                 setOf(idea) == testShop.getProductsOrderedByAll())
     }
 }
