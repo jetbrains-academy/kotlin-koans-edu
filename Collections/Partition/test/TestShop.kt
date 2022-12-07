@@ -34,6 +34,7 @@ fun shop(name: String, vararg customers: Customer) = Shop(name, customers.toList
 val shop = shop("jb test shop",
         customer(lucas, Canberra,
                 order(reSharper),
+                order(pyCharm, isDelivered = false),
                 order(reSharper, dotMemory, dotTrace)
         ),
         customer(cooper, Canberra),
